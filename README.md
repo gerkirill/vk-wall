@@ -1,0 +1,1 @@
+http://sigma.kurgent.com/vk-wall/
