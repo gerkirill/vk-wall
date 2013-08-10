@@ -1,0 +1,144 @@
+html {
+	background: #dfdfdf;
+}
+
+@vk-post-width:   380px;
+@vk-attachment-block-height: 304px;
+@vk-thumbs-count: 6;
+@vk-thumb-border: 4px;
+@vk-thumb-margin: 2px;
+@vk-img-border:   5px;
+@vk-info-height:  80px;
+
+.vk-post {
+	width: @vk-post-width;
+	display:block;
+	float:left;
+	position: relative;
+	margin-right:10px;
+	margin-top:5px;
+	
+	&-link {
+		text-decoration: none;
+	}
+
+	&-even {
+		margin-top: @vk-info-height + 10;
+
+		.vk-post__info {
+			left: -(@vk-post-width+10);
+			top: @vk-attachment-block-height - @vk-info-height - 2;
+		}
+
+		.vk-post__info-arrow {
+			left: auto;
+			right: -15px;
+			background-image: url('img/white-arrow-right.png');
+		}
+	}
+
+	&__info {
+		position: absolute;
+		width: @vk-post-width;
+		left: @vk-post-width+10;
+		height: @vk-info-height;
+		background: #fff;
+		z-index:10;
+	}
+
+	&__info-title {
+		background: #DEE5EB;
+		margin: 3px 2px;
+		height: 24px;
+		color: #2B5897;
+		font-size: 14px;
+		padding: 0 4px 0 4px;
+		line-height: 24px;
+	}
+
+	&__info-arrow {
+		height: 38px;
+		position: absolute;
+		width: 15px;
+		background-image: url('img/white-arrow-left.png');
+		left: -15px;
+		top:22px;
+	}
+
+	&__info-content {
+		padding: 4px;
+		color: #000;
+		font-size:14px;
+	}
+
+	&__img {
+		border: @vk-img-border solid #ffffff;
+		width: @vk-post-width - @vk-img-border*2;
+		display: block;
+	}
+	&__thumbs {
+		font-size: 0;
+	}
+	&__thumb {
+		border: 4px solid #ffffff;
+		margin: @vk-thumb-margin;
+		width: floor((@vk-post-width - (@vk-thumb-border*2 + @vk-thumb-margin*2)*@vk-thumbs-count + 2*@vk-thumb-margin ) / @vk-thumbs-count);
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@vk-lastpost-width: @vk-post-width*2+10;
+
+.vk-lastpost {
+	display:block;
+	background: #fff;
+	width: @vk-lastpost-width;
+	padding-top:1px;
+	&-link {
+		text-decoration: none;
+	}
+	&__info {
+		width: @vk-lastpost-width;
+		height: @vk-info-height;
+		background: #fff;
+	}
+
+	&__info-title {
+		background: #DEE5EB;
+		margin: 3px 2px;
+		height: 24px;
+		color: #2B5897;
+		font-size: 14px;
+		padding: 0 4px 0 4px;
+		line-height: 24px;
+	}
+
+	&__info-content {
+		padding: 4px;
+		color: #000;
+		font-size:14px;
+	}
+
+	&__img {
+		border: @vk-img-border solid #ffffff;
+		display: block;
+		float:left;
+	}
+	&__thumbs {
+		font-size: 0;
+		float:left;
+		width: 90px;
+		margin-left:6px;
+	}
+	&__thumb {
+		border: 4px solid #ffffff;
+		margin: @vk-thumb-margin;
+	}
+}

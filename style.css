@@ -1,0 +1,118 @@
+html {
+  background: #dfdfdf;
+}
+.vk-post {
+  width: 380px;
+  display: block;
+  float: left;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.vk-post-link {
+  text-decoration: none;
+}
+.vk-post-even {
+  margin-top: 90px;
+}
+.vk-post-even .vk-post__info {
+  left: -390px;
+  top: 222px;
+}
+.vk-post-even .vk-post__info-arrow {
+  left: auto;
+  right: -15px;
+  background-image: url('img/white-arrow-right.png');
+}
+.vk-post__info {
+  position: absolute;
+  width: 380px;
+  left: 390px;
+  height: 80px;
+  background: #fff;
+  z-index: 10;
+}
+.vk-post__info-title {
+  background: #DEE5EB;
+  margin: 3px 2px;
+  height: 24px;
+  color: #2B5897;
+  font-size: 14px;
+  padding: 0 4px 0 4px;
+  line-height: 24px;
+}
+.vk-post__info-arrow {
+  height: 38px;
+  position: absolute;
+  width: 15px;
+  background-image: url('img/white-arrow-left.png');
+  left: -15px;
+  top: 22px;
+}
+.vk-post__info-content {
+  padding: 4px;
+  color: #000;
+  font-size: 14px;
+}
+.vk-post__img {
+  border: 5px solid #ffffff;
+  width: 370px;
+  display: block;
+}
+.vk-post__thumbs {
+  font-size: 0;
+}
+.vk-post__thumb {
+  border: 4px solid #ffffff;
+  margin: 2px;
+  width: 52px;
+}
+.vk-post__thumb:first-child {
+  margin-left: 0;
+}
+.vk-post__thumb:last-child {
+  margin-right: 0;
+}
+.vk-lastpost {
+  display: block;
+  background: #fff;
+  width: 770px;
+  padding-top: 1px;
+}
+.vk-lastpost-link {
+  text-decoration: none;
+}
+.vk-lastpost__info {
+  width: 770px;
+  height: 80px;
+  background: #fff;
+}
+.vk-lastpost__info-title {
+  background: #DEE5EB;
+  margin: 3px 2px;
+  height: 24px;
+  color: #2B5897;
+  font-size: 14px;
+  padding: 0 4px 0 4px;
+  line-height: 24px;
+}
+.vk-lastpost__info-content {
+  padding: 4px;
+  color: #000;
+  font-size: 14px;
+}
+.vk-lastpost__img {
+  border: 5px solid #ffffff;
+  display: block;
+  float: left;
+}
+.vk-lastpost__thumbs {
+  font-size: 0;
+  float: left;
+  width: 90px;
+  margin-left: 6px;
+}
+.vk-lastpost__thumb {
+  border: 4px solid #ffffff;
+  margin: 2px;
+}
